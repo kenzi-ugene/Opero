@@ -1,0 +1,45 @@
+---
+import { getRelativeLocaleUrl } from 'astro:i18n';
+import type { Locale } from '../i18n';
+import type { Messages } from '../i18n/types';
+import { t } from '../i18n/utils';
+
+interface Props {
+  lang: Locale;
+  dict: Messages;
+}
+
+const { lang, dict } = Astro.props;
+
+const year = new Date().getFullYear();
+const home = getRelativeLocaleUrl(lang);
+const services = getRelativeLocaleUrl(lang, 'services');
+const about = getRelativeLocaleUrl(lang, 'about');
+const contact = getRelativeLocaleUrl(lang, 'contact');
+---
+
+<footer class="mt-24 border-t border-border bg-surface-muted/50">
+  <div class="mx-auto grid max-w-6xl gap-10 px-4 py-14 md:grid-cols-2 md:px-6">
+    <div>
+      <p class="font-serif text-2xl font-semibold text-text">{dict.brand}</p>
+      <p class="mt-3 max-w-md text-subtle">{dict.footer.description}</p>
+      <a
+        href={contact}
+        class="mt-6 inline-flex rounded-lg bg-accent px-5 py-2.5 text-sm font-semibold text-on-accent no-underline hover:bg-accent-hover"
+      >
+        {dict.footer.cta}
+      </a>
+    </div>
+    <div class="flex flex-col gap-4 md:items-end">
+      <nav class="flex flex-wrap gap-x-6 gap-y-2 text-sm" aria-label="Footer">
+        <a href={home} class="text-muted no-underline hover:text-accent">{t(dict, 'nav.home')}</a>
+        <a href={services} class="text-muted no-underline hover:text-accent">{t(dict, 'nav.services')}</a>
+        <a href={about} class="text-muted no-underline hover:text-accent">{t(dict, 'nav.about')}</a>
+        <a href={contact} class="text-muted no-underline hover:text-accent">{t(dict, 'nav.contact')}</a>
+      </nav>
+      <p class="text-sm text-subtle">
+        © {year} {dict.brand}. {dict.footer.rights}
+      </p>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-serif: "Fraunces", "Georgia", ui-serif, serif;
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --color-page: var(--page);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-elevated: var(--elevated);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-subtle: var(--subtle);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-on-accent: var(--on-accent);
+  --color-ring: var(--ring);
+}
+
+:root {
+  color-scheme: light;
+  --page: #f6f4f1;
+  --surface: #ffffff;
+  --surface-muted: #eeebe7;
+  --elevated: #e8e4de;
+  --text: #1c1917;
+  --muted: #44403c;
+  --subtle: #78716c;
+  --border: #e5e2df;
+  --accent: #b45309;
+  --accent-hover: #9a3412;
+  --on-accent: #fffbeb;
+  --ring: #c2410c;
+}
+
+.dark {
+  color-scheme: dark;
+  --page: #090a0b;
+  --surface: #111418;
+  --surface-muted: #181c22;
+  --elevated: #1e242d;
+  --text: #f5f3f0;
+  --muted: #d6d3cd;
+  --subtle: #9c9690;
+  --border: #2d333d;
+  --accent: #ea580c;
+  --accent-hover: #f97316;
+  --on-accent: #1c1917;
+  --ring: #fb923c;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth antialiased;
+  }
+
+  body {
+    @apply min-h-screen bg-page text-text font-sans;
+  }
+
+  html:not(.dark) body {
+    background-image: radial-gradient(
+      ellipse 90% 60% at 100% -10%,
+      color-mix(in oklch, var(--accent) 8%, transparent),
+      transparent 55%
+    );
+    background-attachment: fixed;
+  }
+
+  html.dark body {
+    background-image:
+      radial-gradient(ellipse 120% 80% at 100% -15%, rgba(234, 88, 12, 0.12), transparent 50%),
+      radial-gradient(ellipse 80% 60% at 0% 100%, rgba(45, 51, 61, 0.4), transparent 45%),
+      linear-gradient(180deg, var(--page) 0%, #0c0e11 100%);
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    @apply bg-accent/20 text-text;
+  }
+
+  a {
+    @apply text-accent underline-offset-4 transition-colors hover:text-accent-hover;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-ring;
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "brand": "Opero",
+  "tagline": "Un logiciel aussi performant qu’agréable",
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "about": "À propos",
+    "contact": "Contact",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "themeLight": "Mode clair",
+    "themeDark": "Mode sombre",
+    "themeToggle": "Changer de thème",
+    "languageSelect": "Langue"
+  },
+  "footer": {
+    "rights": "Tous droits réservés.",
+    "cta": "Lancer un projet",
+    "description": "Nous concevons et livrons des applications mobiles, des produits web, des portails et des systèmes métier—avec une communication claire de la découverte au lancement."
+  },
+  "locales": {
+    "en": "English",
+    "zh": "中文",
+    "ms": "Bahasa Melayu",
+    "ja": "日本語",
+    "es": "Español",
+    "fr": "Français"
+  },
+  "home": {
+    "heroTitle": "De meilleures expériences numériques pour vos clients",
+    "heroSubtitle": "Du mobile et du web aux portails et systèmes cœur—nous construisons des logiciels qui améliorent l’interaction avec votre entreprise, et restons à vos côtés après la livraison.",
+    "primaryCta": "Parlons-en",
+    "secondaryCta": "Découvrir les services",
+    "servicesHeading": "Ce que nous livrons",
+    "servicesLead": "Une livraison de bout en bout alignée sur vos objectifs—UX, ingénierie et exploitation durable.",
+    "processHeading": "Notre façon de travailler",
+    "processLead": "Un partenariat simple centré sur les résultats et l’expérience client mesurable.",
+    "steps": {
+      "discover": {
+        "title": "Découvrir",
+        "text": "Nous clarifions objectifs, utilisateurs, contraintes et indicateurs de succès avant d’écrire du code."
+      },
+      "design": {
+        "title": "Concevoir et construire",
+        "text": "UX et ingénierie itératives avec des revues que vous pouvez suivre—pas de boîte noire."
+      },
+      "ship": {
+        "title": "Lancer et améliorer",
+        "text": "Lancez en confiance ; surveillez, affinez et faites évoluer selon l’usage réel."
+      }
+    },
+    "closingHeading": "Prêt à améliorer le parcours client ?",
+    "closingText": "Parlez-nous de votre produit ou système interne—nous répondrons avec les prochaines étapes."
+  },
+  "services": {
+    "indexTitle": "Services",
+    "indexDescription": "Applications mobiles, plateformes web, portails, systèmes et conseil IT stratégique.",
+    "indexHeading": "Des solutions adaptées à votre stack et à votre feuille de route",
+    "indexLead": "Choisissez un domaine pour voir comment nous aidons les équipes à livrer un logiciel fiable et centré utilisateur.",
+    "learnMore": "En savoir plus",
+    "summaries": {
+      "mobile": "Applications natives et multiplateformes avec UX soignée et analytique terrain.",
+      "web": "Sites marketing et apps web optimisés pour la vitesse, le SEO et l’accessibilité.",
+      "portal": "Portails self-service et B2B avec rôles, workflows et clarté.",
+      "systems": "Systèmes métier, intégrations et automatisation exploitables en confiance.",
+      "consulting": "Architecture, évaluations et feuilles de route alignées sur vos résultats."
+    },
+    "detail": {
+      "mobile": {
+        "title": "Développement d’applications mobiles",
+        "intro": "Applications natives et multiplateformes avec UX soignée, parcours hors ligne et analytique pour comprendre l’usage réel.",
+        "bullets": [
+          "iOS et Android avec architectures maintenables",
+          "Accompagnement publication App Store et Play",
+          "Performance, accessibilité et suivi des plantages"
+        ]
+      },
+      "web": {
+        "title": "Développement web",
+        "intro": "Sites marketing rapides et accessibles et applications web complexes—SSR ou SPA selon le cas, optimisés SEO et Core Web Vitals.",
+        "bullets": [
+          "Systèmes de design et bibliothèques de composants",
+          "Intégrations API, authentification et paiements",
+          "Hébergement et CI adaptés à votre équipe"
+        ]
+      },
+      "portal": {
+        "title": "Développement de portails",
+        "intro": "Portails self-service et B2B qui réduisent la charge support : comptes, documents, workflows et accès par rôles compréhensibles.",
+        "bullets": [
+          "Modèles de rôles et permissions",
+          "Workflows, notifications et pistes d’audit",
+          "Opérations de masse et imports si besoin"
+        ]
+      },
+      "systems": {
+        "title": "Développement de systèmes",
+        "intro": "Systèmes métier, intégrations et automatisation—back-ends fiables, modèles de données clairs et outils d’exploitation.",
+        "bullets": [
+          "APIs, files et tâches planifiées",
+          "Modernisation du legacy et migration par étapes",
+          "Observabilité : journaux, métriques, alertes"
+        ]
+      },
+      "consulting": {
+        "title": "Conseil et solutions IT",
+        "intro": "Revues d’architecture, choix technologiques neutres, sécurité et conformité, et feuilles de route reliant objectifs métier et livraison.",
+        "bullets": [
+          "Évaluations techniques et preuves de concept",
+          "Montée en compétence et documentation",
+          "Ateliers de conception avec les parties prenantes"
+        ]
+      }
+    }
+  },
+  "about": {
+    "title": "À propos d’Opero",
+    "description": "Qui nous sommes et pourquoi l’expérience client guide notre travail.",
+    "heading": "Partenaires logiciel, pas gestionnaires de tickets",
+    "lead": "Opero aide les organisations à livrer des produits numériques et outils internes que les gens aiment utiliser. Nous croyons qu’une grande expérience client vient de la clarté, des performances et d’un design respectueux—pas du jargon.",
+    "body1": "Notre équipe mêle culture produit et ingénierie solide. Application client, portail employés ou système cœur, nous alignons les choix techniques sur le travail réel des utilisateurs.",
+    "body2": "Nous sommes structurés pour une collaboration longue durée : code lisible, documentation transférable et processus pragmatiques pour que votre équipe maîtrise la feuille de route quand vous le souhaitez.",
+    "valuesHeading": "Ce qui compte pour nous",
+    "values": {
+      "cx": {
+        "title": "L’expérience client d’abord",
+        "text": "Nous mesurons le succès par les résultats pour vos utilisateurs et parties prenantes—pas seulement par le nombre de fonctionnalités."
+      },
+      "clarity": {
+        "title": "Transparence",
+        "text": "Vous savez toujours où en est le projet, les compromis et les risques ; pas de surprise au lancement."
+      },
+      "quality": {
+        "title": "Qualité durable",
+        "text": "Nous construisons pour la maintenabilité afin que votre produit évolue pendant des années."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Contactez Opero pour des projets et du conseil.",
+    "heading": "Discutons",
+    "lead": "Parlez-nous de vos objectifs—nous répondrons avec des questions, un calendrier indicatif ou un appel.",
+    "form": {
+      "name": "Nom",
+      "email": "E-mail",
+      "company": "Entreprise",
+      "service": "Service souhaité",
+      "servicePlaceholder": "Sélection…",
+      "placeholders": {
+        "name": "Ahmad bin Hassan",
+        "email": "vous@entreprise.com.my",
+        "company": "Contoh Solutions Sdn Bhd",
+        "message": "Périmètre, calendrier, budget—contact préféré ex. +60 12-345 6789 (WhatsApp)"
+      },
+      "message": "Message",
+      "submit": "Envoyer",
+      "sending": "Envoi…",
+      "success": "Merci—nous avons bien reçu votre message.",
+      "error": "Une erreur s’est produite. Réessayez ou écrivez-nous directement.",
+      "emailSubject": "Demande depuis le site Opero",
+      "options": {
+        "general": "Demande générale",
+        "mobile": "Applications mobiles",
+        "web": "Web",
+        "portal": "Portails",
+        "systems": "Systèmes",
+        "consulting": "Conseil"
+      }
+    },
+    "direct": {
+      "heading": "Préférez l’e-mail ?",
+      "emailLabel": "E-mail",
+      "emailValue": "operomykl@gmail.com",
+      "phoneLabel": "Téléphone",
+      "phoneValue": "+60 12-345 6789"
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Opero — Apps, web, portails, systèmes et conseil IT",
+      "description": "Opero conçoit des applications mobiles, produits web, portails et systèmes métier. Améliorez l’expérience client avec un partenaire orienté résultats."
+    },
+    "services": {
+      "title": "Services — Opero",
+      "description": "Découvrez le développement mobile, web, portails, systèmes et le conseil IT chez Opero."
+    },
+    "about": {
+      "title": "À propos — Opero",
+      "description": "La mission d’Opero : livrer des logiciels qui améliorent l’expérience clients et collaborateurs."
+    },
+    "contact": {
+      "title": "Contact — Opero",
+      "description": "Contactez Opero pour des projets logiciels, portails, systèmes et conseil IT."
+    }
+  }
+}

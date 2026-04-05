@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { messages, type Locale, LOCALES } from '../../i18n';
+
+export function getStaticPaths() {
+  return LOCALES.map((lang) => ({ params: { lang } }));
+}
+
+const { lang: langParam } = Astro.params;
+const lang = langParam as Locale;
+const dict = messages[lang];
+
+const seo = dict.seo.about;
+---
+
+<BaseLayout
+  lang={lang}
+  dict={dict}
+  title={seo.title}
+  description={seo.description}
+  seoPath="about"
+>
+  <div class="mx-auto max-w-3xl px-4 py-14 md:px-6 md:py-20">
+    <h1 class="font-serif text-4xl font-semibold tracking-tight text-text md:text-5xl">
+      {dict.about.heading}
+    </h1>
+    <p class="mt-6 text-lg text-muted">{dict.about.lead}</p>
+    <p class="mt-6 text-subtle">{dict.about.body1}</p>
+    <p class="mt-4 text-subtle">{dict.about.body2}</p>
+
+    <h2 class="mt-16 font-serif text-2xl font-semibold text-text">{dict.about.valuesHeading}</h2>
+    <ul class="mt-8 space-y-8">
+      <li>
+        <h3 class="text-lg font-semibold text-text">{dict.about.values.cx.title}</h3>
+        <p class="mt-2 text-subtle">{dict.about.values.cx.text}</p>
+      </li>
+      <li>
+        <h3 class="text-lg font-semibold text-text">{dict.about.values.clarity.title}</h3>
+        <p class="mt-2 text-subtle">{dict.about.values.clarity.text}</p>
+      </li>
+      <li>
+        <h3 class="text-lg font-semibold text-text">{dict.about.values.quality.title}</h3>
+        <p class="mt-2 text-subtle">{dict.about.values.quality.text}</p>
+      </li>
+    </ul>
+  </div>
+</BaseLayout>

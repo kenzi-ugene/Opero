@@ -1,0 +1,61 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ContactForm from '../../components/ContactForm.astro';
+import { messages, type Locale, LOCALES } from '../../i18n';
+
+export function getStaticPaths() {
+  return LOCALES.map((lang) => ({ params: { lang } }));
+}
+
+const { lang: langParam } = Astro.params;
+const lang = langParam as Locale;
+const dict = messages[lang];
+
+const seo = dict.seo.contact;
+const phoneTel = dict.contact.direct.phoneValue.replace(/[\s-]/g, '');
+---
+
+<BaseLayout
+  lang={lang}
+  dict={dict}
+  title={seo.title}
+  description={seo.description}
+  seoPath="contact"
+>
+  <div class="mx-auto max-w-6xl px-4 py-14 md:px-6 md:py-20">
+    <div class="grid gap-12 lg:grid-cols-2 lg:gap-16">
+      <div>
+        <h1 class="font-serif text-4xl font-semibold tracking-tight text-text md:text-5xl">
+          {dict.contact.heading}
+        </h1>
+        <p class="mt-4 text-lg text-subtle">{dict.contact.lead}</p>
+
+        <div class="mt-10 rounded-2xl border border-border bg-surface-muted/70 p-6">
+          <h2 class="text-sm font-semibold uppercase tracking-wider text-subtle">
+            {dict.contact.direct.heading}
+          </h2>
+          <dl class="mt-4 space-y-3 text-muted">
+            <div>
+              <dt class="text-sm text-subtle">{dict.contact.direct.emailLabel}</dt>
+              <dd>
+                <a href={`mailto:${dict.contact.direct.emailValue}`} class="font-medium no-underline">
+                  {dict.contact.direct.emailValue}
+                </a>
+              </dd>
+            </div>
+            <div>
+              <dt class="text-sm text-subtle">{dict.contact.direct.phoneLabel}</dt>
+              <dd>
+                <a href={`tel:${phoneTel}`} class="no-underline">
+                  {dict.contact.direct.phoneValue}
+                </a>
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+
+      <ContactForm dict={dict} />
+    </div>
+  </div>
+</BaseLayout>

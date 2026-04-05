@@ -1,0 +1,197 @@
+{
+  "brand": "Opero",
+  "tagline": "既好用又好用的软件",
+  "nav": {
+    "home": "首页",
+    "services": "服务",
+    "about": "关于",
+    "contact": "联系",
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单",
+    "themeLight": "浅色模式",
+    "themeDark": "深色模式",
+    "themeToggle": "切换浅色或深色外观",
+    "languageSelect": "语言"
+  },
+  "footer": {
+    "rights": "保留所有权利。",
+    "cta": "开始项目",
+    "description": "我们设计与交付移动应用、网页产品、门户与业务系统——从需求到上线全程清晰沟通。"
+  },
+  "locales": {
+    "en": "English",
+    "zh": "中文",
+    "ms": "Bahasa Melayu",
+    "ja": "日本語",
+    "es": "Español",
+    "fr": "Français"
+  },
+  "home": {
+    "heroTitle": "为客户打造更出色的数字体验",
+    "heroSubtitle": "从移动与网页到门户与核心系统——我们构建能提升用户与企业互动方式的软件，并在交付后持续陪伴迭代。",
+    "primaryCta": "与我们沟通",
+    "secondaryCta": "了解服务",
+    "servicesHeading": "我们做什么",
+    "servicesLead": "端到端交付，围绕您的目标——体验、工程与可持续运维。",
+    "processHeading": "合作方式",
+    "processLead": "以结果与可衡量的客户体验为导向的清晰协作。",
+    "steps": {
+      "discover": {
+        "title": "澄清",
+        "text": "在写代码前明确目标、用户、约束与成功指标。"
+      },
+      "design": {
+        "title": "设计与构建",
+        "text": "可参与的迭代式体验与工程——过程透明，而非黑箱。"
+      },
+      "ship": {
+        "title": "上线与优化",
+        "text": "安心发布；基于真实使用数据持续改进与扩展。"
+      }
+    },
+    "closingHeading": "准备提升客户旅程？",
+    "closingText": "告诉我们您的产品或内部系统需求——我们会回复下一步建议。"
+  },
+  "services": {
+    "indexTitle": "服务",
+    "indexDescription": "移动应用、网页平台、门户、系统与 IT 咨询。",
+    "indexHeading": "匹配您的技术栈与路线图",
+    "indexLead": "选择一项能力，了解我们如何帮助团队交付可靠、以用户为中心的软件。",
+    "learnMore": "了解更多",
+    "summaries": {
+      "mobile": "原生与跨平台应用，注重体验与真实使用数据。",
+      "web": "兼顾速度、SEO 与无障碍的营销站与 Web 应用。",
+      "portal": "具备角色、流程与清晰体验的自助与 B2B 门户。",
+      "systems": "可安心运营的业务系统、集成与自动化。",
+      "consulting": "与您的目标一致的架构、评估与路线图。"
+    },
+    "detail": {
+      "mobile": {
+        "title": "移动应用开发",
+        "intro": "原生与跨平台应用，注重体验细节、离线场景与分析埋点，帮助您理解真实使用情况。",
+        "bullets": [
+          "iOS 与 Android，可维护架构",
+          "应用商店上架与发布支持",
+          "性能、无障碍与崩溃监控"
+        ]
+      },
+      "web": {
+        "title": "网站与 Web 开发",
+        "intro": "快速、可访问的营销站与复杂 Web 应用——按需选择 SSR 或 SPA，兼顾 SEO 与核心网页指标。",
+        "bullets": [
+          "设计系统与组件库",
+          "API、身份与支付集成",
+          "契合团队的托管与 CI 流程"
+        ]
+      },
+      "portal": {
+        "title": "门户开发",
+        "intro": "自助与 B2B 门户，减轻支持压力：账户、文档、流程与易懂的角色权限。",
+        "bullets": [
+          "角色与权限模型",
+          "工作流、通知与审计",
+          "批量操作与导入（如需要）"
+        ]
+      },
+      "systems": {
+        "title": "系统开发",
+        "intro": "业务系统、集成与自动化——可靠后端、清晰数据模型与运维工具。",
+        "bullets": [
+          "API、队列与定时任务",
+          "遗留系统现代化与分阶段迁移",
+          "可观测性：日志、指标、告警"
+        ]
+      },
+      "consulting": {
+        "title": "IT 咨询与解决方案",
+        "intro": "架构评审、中立的技术选型、安全与合规意识，以及连接业务目标与交付的路线规划。",
+        "bullets": [
+          "技术评估与概念验证",
+          "团队赋能与文档沉淀",
+          "与干系人一起的解决方案设计工作坊"
+        ]
+      }
+    }
+  },
+  "about": {
+    "title": "关于 Opero",
+    "description": "我们是谁，以及为何以客户体验为核心。",
+    "heading": "软件伙伴，而非工单处理机",
+    "lead": "Opero 帮助组织交付用户与员工都愿意使用的数字产品与内部工具。我们相信卓越体验来自清晰、性能与尊重用户的设计——而非空洞口号。",
+    "body1": "团队兼具产品与工程思维。无论您需要面向客户的应用、员工门户还是核心系统，我们都会让技术决策贴合真实工作方式。",
+    "body2": "我们为长期协作而建设：可读代码、便于交接的文档，以及务实流程，便于您的团队在未来主导路线图。",
+    "valuesHeading": "我们在乎的事",
+    "values": {
+      "cx": {
+        "title": "客户体验优先",
+        "text": "我们以用户与干系人的结果衡量成功——而非单纯功能数量。"
+      },
+      "clarity": {
+        "title": "透明",
+        "text": "您将始终了解进度、取舍与风险；上线时不会有意外。"
+      },
+      "quality": {
+        "title": "持久质量",
+        "text": "我们注重可维护性，使产品能够多年持续演进。"
+      }
+    }
+  },
+  "contact": {
+    "title": "联系",
+    "description": "项目咨询与合作请联系 Opero。",
+    "heading": "开始对话",
+    "lead": "简单描述您的目标——我们会回复问题、粗略排期或安排通话。",
+    "form": {
+      "name": "姓名",
+      "email": "邮箱",
+      "company": "公司",
+      "service": "意向服务",
+      "servicePlaceholder": "请选择…",
+      "placeholders": {
+        "name": "陈国强",
+        "email": "nama@syarikat.com.my",
+        "company": "范例科技私人有限公司",
+        "message": "项目范围、时间表、预算——首选联络方式如 +60 12-345 6789（可注明 WhatsApp）"
+      },
+      "message": "留言",
+      "submit": "发送",
+      "sending": "发送中…",
+      "success": "感谢，我们已收到您的信息。",
+      "error": "发送失败，请重试或直接发邮件。",
+      "emailSubject": "Opero 网站询盘",
+      "options": {
+        "general": "一般咨询",
+        "mobile": "移动应用",
+        "web": "Web",
+        "portal": "门户",
+        "systems": "系统",
+        "consulting": "咨询"
+      }
+    },
+    "direct": {
+      "heading": "更倾向邮件？",
+      "emailLabel": "邮箱",
+      "emailValue": "operomykl@gmail.com",
+      "phoneLabel": "电话",
+      "phoneValue": "+60 12-345 6789"
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Opero — 应用、Web、门户、系统与 IT 咨询",
+      "description": "Opero 构建移动应用、网页产品、门户与业务系统。提升客户体验，与专注结果的伙伴一起交付。"
+    },
+    "services": {
+      "title": "服务 — Opero",
+      "description": "了解 Opero 的移动、Web、门户、系统开发与 IT 咨询服务。"
+    },
+    "about": {
+      "title": "关于 — Opero",
+      "description": "了解 Opero 如何通过软件改善客户与员工体验。"
+    },
+    "contact": {
+      "title": "联系 — Opero",
+      "description": "联系 Opero：软件项目、门户、系统与 IT 咨询。"
+    }
+  }
+}

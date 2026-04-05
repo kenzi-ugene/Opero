@@ -1,0 +1,197 @@
+{
+  "brand": "Opero",
+  "tagline": "Perisian yang baik dipakai dan berprestasi",
+  "nav": {
+    "home": "Laman utama",
+    "services": "Perkhidmatan",
+    "about": "Tentang",
+    "contact": "Hubungi",
+    "openMenu": "Buka menu",
+    "closeMenu": "Tutup menu",
+    "themeLight": "Mod terang",
+    "themeDark": "Mod gelap",
+    "themeToggle": "Tukar tema warna",
+    "languageSelect": "Bahasa"
+  },
+  "footer": {
+    "rights": "Hak cipta terpelihara.",
+    "cta": "Mulakan projek",
+    "description": "Kami mereka dan hantar aplikasi mudah alih, produk web, portal dan sistem perniagaan—dengan komunikasi yang jelas dari mula hingga pelancaran."
+  },
+  "locales": {
+    "en": "English",
+    "zh": "中文",
+    "ms": "Bahasa Melayu",
+    "ja": "日本語",
+    "es": "Español",
+    "fr": "Français"
+  },
+  "home": {
+    "heroTitle": "Pengalaman digital yang lebih baik untuk pelanggan anda",
+    "heroSubtitle": "Daripada mudah alih dan web kepada portal dan sistem teras—kami membina perisian yang meningkatkan cara orang berinteraksi dengan perniagaan anda, dan kekal bersama anda selepas penghantaran.",
+    "primaryCta": "Hubungi kami",
+    "secondaryCta": "Lihat perkhidmatan",
+    "servicesHeading": "Apa yang kami bina",
+    "servicesLead": "Penghantaran menyeluruh selari dengan matlamat anda—UX, kejuruteraan dan operasi yang mampan.",
+    "processHeading": "Cara kami bekerja",
+    "processLead": "Kerjasama yang fokus kepada hasil dan pengalaman pelanggan yang boleh diukur.",
+    "steps": {
+      "discover": {
+        "title": "Fahami",
+        "text": "Kami jelaskan matlamat, pengguna, kekangan dan metrik kejayaan sebelum menulis kod."
+      },
+      "design": {
+        "title": "Reka & bina",
+        "text": "UX dan kejuruteraan secara berulang dengan semakan yang anda boleh ikuti—tiada kotak hitam."
+      },
+      "ship": {
+        "title": "Lancar & tingkatkan",
+        "text": "Lancar dengan yakin; pantau, perhalusi dan skala berdasarkan penggunaan sebenar."
+      }
+    },
+    "closingHeading": "Sedia tingkatkan perjalanan pelanggan?",
+    "closingText": "Ceritakan produk atau sistem dalaman anda—kami akan balas dengan langkah seterusnya."
+  },
+  "services": {
+    "indexTitle": "Perkhidmatan",
+    "indexDescription": "Aplikasi mudah alih, platform web, portal, sistem dan perundingan IT strategik.",
+    "indexHeading": "Penyelesaian yang selari dengan stack dan hala tuju anda",
+    "indexLead": "Pilih keupayaan untuk melihat bagaimana kami membantu pasukan menghantar perisian yang boleh dipercayai dan berpusatkan pengguna.",
+    "learnMore": "Ketahui lebih lanjut",
+    "summaries": {
+      "mobile": "Aplikasi asli dan rentas platform dengan UX kemas dan analitik dunia nyata.",
+      "web": "Laman pemasaran dan aplikasi web diperkemas untuk kelajuan, SEO dan kebolehcapaian.",
+      "portal": "Portal layan diri dan B2B dengan peranan, aliran kerja dan kejelasan.",
+      "systems": "Sistem perniagaan, penyepaduan dan automasi yang anda boleh operasikan dengan yakin.",
+      "consulting": "Seni bina, penilaian dan peta hala selari dengan hasil anda."
+    },
+    "detail": {
+      "mobile": {
+        "title": "Pembangunan aplikasi mudah alih",
+        "intro": "Aplikasi asli dan rentas platform dengan UX kemas, aliran luar talian dan analitik supaya anda memahami penggunaan sebenar.",
+        "bullets": [
+          "iOS dan Android dengan seni bina yang boleh diselenggara",
+          "Sokongan keluaran App Store dan Play",
+          "Prestasi, kebolehcapaian dan pemantauan ranap"
+        ]
+      },
+      "web": {
+        "title": "Pembangunan web",
+        "intro": "Laman pemasaran yang pantas dan boleh diakses serta aplikasi web kompleks—SSR atau SPA mengikut kesesuaian, dioptimumkan untuk SEO dan Core Web Vitals.",
+        "bullets": [
+          "Sistem reka bentuk dan pustaka komponen",
+          "Penyepaduan API, pengesahan dan pembayaran",
+          "Corak hosting dan CI yang sesuai dengan pasukan anda"
+        ]
+      },
+      "portal": {
+        "title": "Pembangunan portal",
+        "intro": "Portal layan diri dan B2B yang mengurangkan beban sokongan: akaun, dokumen, aliran kerja dan akses berasaskan peranan yang mudah difahami.",
+        "bullets": [
+          "Model peranan dan kebenaran",
+          "Aliran kerja, pemberitahuan dan jejak audit",
+          "Operasi pukal dan import jika perlu"
+        ]
+      },
+      "systems": {
+        "title": "Pembangunan sistem",
+        "intro": "Sistem perniagaan, penyepaduan dan automasi—backend yang boleh dipercayai, model data jelas dan alat operasi.",
+        "bullets": [
+          "API, baris giliran dan kerja berjadual",
+          "Modenisasi legasi dan migrasi berperingkat",
+          "Kebolehlihatan: log, metrik, amaran"
+        ]
+      },
+      "consulting": {
+        "title": "Perundingan & penyelesaian IT",
+        "intro": "Semakan seni bina, pilihan teknologi neutral vendor, kesedaran keselamatan dan pematuhan, serta peta hala yang menghubungkan matlamat perniagaan dengan penghantaran.",
+        "bullets": [
+          "Penilaian teknikal dan bukti konsep",
+          "Pembangunan pasukan dan dokumentasi",
+          "Bengkel reka bentuk penyelesaian bersama pihak berkepentingan"
+        ]
+      }
+    }
+  },
+  "about": {
+    "title": "Tentang Opero",
+    "description": "Siapa kami dan mengapa pengalaman pelanggan memacu kerja kami.",
+    "heading": "Rakan perisian, bukan pemproses tiket",
+    "lead": "Opero membantu organisasi melancarkan produk digital dan alat dalaman yang orang suka gunakan. Kami percaya pengalaman pelanggan yang hebat datang daripada kejelasan, prestasi dan reka bentuk yang menghormati pengguna—bukan jargon.",
+    "body1": "Pasukan kami menggabungkan pemikiran produk dengan kejuruteraan kukuh. Sama ada aplikasi pelanggan, portal pekerja atau sistem teras, kami selaraskan keputusan teknikal dengan cara pengguna sebenar bekerja.",
+    "body2": "Kami disusun untuk kerjasama jangka panjang: kod asas yang mudah dibaca, dokumentasi untuk serah terima, dan proses pragmatik supaya pasukan anda boleh memiliki hala tuju apabila bersedia.",
+    "valuesHeading": "Apa yang kami utamakan",
+    "values": {
+      "cx": {
+        "title": "Pengalaman pelanggan dahulu",
+        "text": "Kami ukur kejayaan melalui hasil untuk pengguna dan pihak berkepentingan—bukan sekadar bilangan ciri."
+      },
+      "clarity": {
+        "title": "Ketelusan",
+        "text": "Anda sentiasa tahu status, pertukaran dan risiko; tiada kejutan semasa pelancaran."
+      },
+      "quality": {
+        "title": "Kualiti kekal",
+        "text": "Kami membina untuk penyelenggaraan supaya produk anda boleh berkembang selama bertahun-tahun."
+      }
+    }
+  },
+  "contact": {
+    "title": "Hubungi",
+    "description": "Hubungi Opero untuk pertanyaan projek dan perundingan.",
+    "heading": "Jom berbual",
+    "lead": "Kongsi sedikit tentang matlamat anda—kami akan balas dengan soalan, garis masa kasar atau panggilan.",
+    "form": {
+      "name": "Nama",
+      "email": "E-mel",
+      "company": "Syarikat",
+      "service": "Perkhidmatan diminati",
+      "servicePlaceholder": "Pilih…",
+      "placeholders": {
+        "name": "Ahmad bin Hassan",
+        "email": "anda@syarikat.com.my",
+        "company": "Contoh Solutions Sdn Bhd",
+        "message": "Skop projek, garis masa, bajet — hubungan pilihan cth. +60 12-345 6789 (WhatsApp)"
+      },
+      "message": "Mesej",
+      "submit": "Hantar mesej",
+      "sending": "Menghantar…",
+      "success": "Terima kasih—kami telah menerima mesej anda.",
+      "error": "Ralat berlaku. Cuba lagi atau e-mel kami terus.",
+      "emailSubject": "Pertanyaan laman web Opero",
+      "options": {
+        "general": "Pertanyaan umum",
+        "mobile": "Aplikasi mudah alih",
+        "web": "Web",
+        "portal": "Portal",
+        "systems": "Sistem",
+        "consulting": "Perundingan"
+      }
+    },
+    "direct": {
+      "heading": "Lebih suka e-mel?",
+      "emailLabel": "E-mel",
+      "emailValue": "operomykl@gmail.com",
+      "phoneLabel": "Telefon",
+      "phoneValue": "+60 12-345 6789"
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Opero — Aplikasi, web, portal, sistem & perundingan IT",
+      "description": "Opero membina aplikasi mudah alih, produk web, portal dan sistem perniagaan. Tingkatkan pengalaman pelanggan dengan rakan yang fokus kepada hasil."
+    },
+    "services": {
+      "title": "Perkhidmatan — Opero",
+      "description": "Terokai pembangunan mudah alih, web, portal, sistem dan perundingan IT daripada Opero."
+    },
+    "about": {
+      "title": "Tentang — Opero",
+      "description": "Ketahui misi Opero untuk menghantar perisian yang meningkatkan pengalaman pelanggan dan pekerja."
+    },
+    "contact": {
+      "title": "Hubungi — Opero",
+      "description": "Hubungi Opero untuk projek perisian, portal, sistem dan perundingan IT."
+    }
+  }
+}

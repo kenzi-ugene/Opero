@@ -1,0 +1,43 @@
+---
+import { getRelativeLocaleUrl } from 'astro:i18n';
+import { LOCALES, type Locale } from '../i18n';
+import type { Messages } from '../i18n/types';
+import { getPathWithoutLocale } from '../i18n/utils';
+interface Props {
+  lang: Locale;
+  dict: Messages;
+}
+
+const { lang, dict } = Astro.props;
+
+const routePath = getPathWithoutLocale(Astro.url.pathname);
+---
+
+<div class="min-w-0">
+  <label class="sr-only" for="locale-select">{dict.nav.languageSelect}</label>
+  <select
+    id="locale-select"
+    class="max-w-[11rem] cursor-pointer rounded-lg border border-border bg-surface-muted/80 py-1.5 pl-2.5 pr-8 text-sm text-text shadow-sm focus:border-accent focus:outline-none focus:ring-2 focus:ring-ring/30 sm:max-w-none"
+    data-locale-select
+  >
+    {
+      LOCALES.map((loc) => {
+        const href = routePath ? getRelativeLocaleUrl(loc, routePath) : getRelativeLocaleUrl(loc);
+        return (
+          <option value={href} selected={loc === lang}>
+            {dict.locales[loc]}
+          </option>
+        );
+      })
+    }
+  </select>
+</div>
+
+<script>
+  document.querySelectorAll<HTMLSelectElement>('[data-locale-select]').forEach((sel) => {
+    sel.addEventListener('change', () => {
+      const v = sel.value;
+      if (v) window.location.href = v;
+    });
+  });
+</script>

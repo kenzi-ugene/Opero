@@ -1,0 +1,197 @@
+{
+  "brand": "Opero",
+  "tagline": "Software that feels as good as it performs",
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "themeLight": "Light mode",
+    "themeDark": "Dark mode",
+    "themeToggle": "Toggle color theme",
+    "languageSelect": "Language"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "cta": "Start a project",
+    "description": "We design and ship mobile apps, web products, portals, and business systems—with clear communication from discovery to launch."
+  },
+  "locales": {
+    "en": "English",
+    "zh": "中文",
+    "ms": "Bahasa Melayu",
+    "ja": "日本語",
+    "es": "Español",
+    "fr": "Français"
+  },
+  "home": {
+    "heroTitle": "Better digital experiences for your customers",
+    "heroSubtitle": "From mobile and web to portals and core systems—we build software that improves how people interact with your business, and we stay with you through delivery and beyond.",
+    "primaryCta": "Talk to us",
+    "secondaryCta": "Explore services",
+    "servicesHeading": "What we build",
+    "servicesLead": "End-to-end delivery aligned to your goals—UX, engineering, and sustainable operations.",
+    "processHeading": "How we work",
+    "processLead": "A straightforward partnership focused on outcomes and measurable customer experience.",
+    "steps": {
+      "discover": {
+        "title": "Discover",
+        "text": "We clarify goals, users, constraints, and success metrics before writing code."
+      },
+      "design": {
+        "title": "Design & build",
+        "text": "Iterative UX and engineering with reviews you can follow—no black box."
+      },
+      "ship": {
+        "title": "Ship & improve",
+        "text": "Launch with confidence; monitor, refine, and scale based on real usage."
+      }
+    },
+    "closingHeading": "Ready to improve your customer journey?",
+    "closingText": "Tell us about your product or internal system—we’ll respond with next steps."
+  },
+  "services": {
+    "indexTitle": "Services",
+    "indexDescription": "Mobile apps, web platforms, portals, systems, and strategic IT consulting.",
+    "indexHeading": "Solutions that match your stack and your roadmap",
+    "indexLead": "Pick a capability to see how we help teams deliver reliable, user-centered software.",
+    "learnMore": "Learn more",
+    "summaries": {
+      "mobile": "Native and cross-platform apps with polished UX and real-world analytics.",
+      "web": "Marketing sites and web apps tuned for speed, SEO, and accessibility.",
+      "portal": "Self-service and B2B portals with roles, workflows, and clarity.",
+      "systems": "Business systems, integrations, and automation you can operate with confidence.",
+      "consulting": "Architecture, assessments, and roadmaps aligned to your outcomes."
+    },
+    "detail": {
+      "mobile": {
+        "title": "Mobile app development",
+        "intro": "Native and cross-platform apps with polished UX, offline-aware flows, and analytics hooks so you understand real-world usage.",
+        "bullets": [
+          "iOS and Android with maintainable architectures",
+          "App Store and Play release support",
+          "Performance, accessibility, and crash monitoring"
+        ]
+      },
+      "web": {
+        "title": "Web development",
+        "intro": "Fast, accessible marketing sites and complex web apps—SSR or SPA where it makes sense, always optimized for SEO and Core Web Vitals.",
+        "bullets": [
+          "Design systems and component libraries",
+          "Integrations with APIs, auth, and payments",
+          "Hosting and CI patterns that fit your team"
+        ]
+      },
+      "portal": {
+        "title": "Portal development",
+        "intro": "Self-service and B2B portals that reduce support load: accounts, documents, workflows, and role-based access your users actually understand.",
+        "bullets": [
+          "Role and permission models",
+          "Workflows, notifications, and audit trails",
+          "Bulk operations and imports where needed"
+        ]
+      },
+      "systems": {
+        "title": "System development",
+        "intro": "Line-of-business systems, integrations, and automation—reliable backends, clear data models, and operational tooling.",
+        "bullets": [
+          "APIs, queues, and scheduled jobs",
+          "Legacy modernization and phased migration",
+          "Observability: logs, metrics, alerts"
+        ]
+      },
+      "consulting": {
+        "title": "IT consulting & solutions",
+        "intro": "Architecture reviews, vendor-neutral technology choices, security and compliance awareness, and roadmaps that connect business goals to delivery.",
+        "bullets": [
+          "Technical assessments and proof of concepts",
+          "Team enablement and documentation",
+          "Solution design workshops with stakeholders"
+        ]
+      }
+    }
+  },
+  "about": {
+    "title": "About Opero",
+    "description": "Who we are and why customer experience drives our work.",
+    "heading": "Software partners, not ticket takers",
+    "lead": "Opero helps organizations ship digital products and internal tools that people enjoy using. We believe great customer experience (CX) comes from clarity, performance, and respectful design—not buzzwords.",
+    "body1": "Our team blends product thinking with solid engineering. Whether you need a customer-facing app, an employee portal, or a backbone system, we align technical decisions with how real users work.",
+    "body2": "We’re set up for long-term collaboration: readable codebases, handover-friendly docs, and pragmatic processes so your own team can own the roadmap when you’re ready.",
+    "valuesHeading": "What we care about",
+    "values": {
+      "cx": {
+        "title": "Customer experience first",
+        "text": "We measure success by outcomes for your users and stakeholders—not feature counts alone."
+      },
+      "clarity": {
+        "title": "Transparency",
+        "text": "You’ll always know status, trade-offs, and risks; no surprises at launch."
+      },
+      "quality": {
+        "title": "Lasting quality",
+        "text": "We build for maintainability so your product can evolve for years."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Reach Opero for project inquiries and consulting.",
+    "heading": "Let’s talk",
+    "lead": "Share a bit about your goals—we’ll get back with questions, a rough timeline, or a call.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "company": "Company",
+      "service": "Service interest",
+      "servicePlaceholder": "Select…",
+      "placeholders": {
+        "name": "Ahmad bin Hassan",
+        "email": "you@company.com.my",
+        "company": "Contoh Solutions Sdn Bhd",
+        "message": "Project scope, timeline, budget — preferred contact e.g. +60 12-345 6789 (WhatsApp available)"
+      },
+      "message": "Message",
+      "submit": "Send message",
+      "sending": "Sending…",
+      "success": "Thanks—we received your message.",
+      "error": "Something went wrong. Try again or email us directly.",
+      "emailSubject": "Opero website inquiry",
+      "options": {
+        "general": "General inquiry",
+        "mobile": "Mobile apps",
+        "web": "Web",
+        "portal": "Portals",
+        "systems": "Systems",
+        "consulting": "Consulting"
+      }
+    },
+    "direct": {
+      "heading": "Prefer email?",
+      "emailLabel": "Email",
+      "emailValue": "operomykl@gmail.com",
+      "phoneLabel": "Phone",
+      "phoneValue": "+60 11-6490 6195"
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Opero — Apps, web, portals, systems & IT consulting",
+      "description": "Opero builds mobile apps, web products, portals, and business systems. Improve customer experience and ship with a partner focused on outcomes."
+    },
+    "services": {
+      "title": "Services — Opero",
+      "description": "Explore mobile, web, portal, system development, and IT consulting services from Opero."
+    },
+    "about": {
+      "title": "About — Opero",
+      "description": "Learn about Opero’s mission to deliver software that improves customer and employee experience."
+    },
+    "contact": {
+      "title": "Contact — Opero",
+      "description": "Contact Opero for software projects, portals, systems, and IT consulting."
+    }
+  }
+}

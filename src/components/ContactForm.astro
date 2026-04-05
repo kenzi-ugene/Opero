@@ -1,0 +1,134 @@
+---
+import type { Messages } from '../i18n/types';
+
+interface Props {
+  dict: Messages;
+}
+
+const { dict } = Astro.props;
+
+/** FormSubmit AJAX — delivers to this inbox. Override with PUBLIC_CONTACT_FORM_ACTION if needed. */
+const defaultEndpoint = 'https://formsubmit.co/ajax/operomykl@gmail.com';
+const formAction = import.meta.env.PUBLIC_CONTACT_FORM_ACTION?.trim() || defaultEndpoint;
+const options = dict.contact.form.options;
+const ph = dict.contact.form.placeholders;
+---
+
+<div class="rounded-2xl border border-border bg-surface p-6 shadow-sm shadow-text/5 md:p-8">
+  <form id="contact-form" class="space-y-5" data-endpoint={formAction}>
+    <input type="hidden" name="_subject" value={dict.contact.form.emailSubject} />
+    <input
+      type="text"
+      name="_gotcha"
+      class="hidden"
+      tabindex="-1"
+      autocomplete="off"
+      aria-hidden="true"
+    />
+
+    <div class="grid gap-5 sm:grid-cols-2">
+      <label class="block">
+        <span class="mb-1.5 block text-sm font-medium text-muted">{dict.contact.form.name}</span>
+        <input
+          type="text"
+          name="name"
+          required
+          autocomplete="name"
+          placeholder={ph.name}
+          class="w-full rounded-lg border border-border bg-page px-3 py-2.5 text-text placeholder:text-subtle/80 focus:border-accent focus:outline-none focus:ring-2 focus:ring-ring/30"
+        />
+      </label>
+      <label class="block">
+        <span class="mb-1.5 block text-sm font-medium text-muted">{dict.contact.form.email}</span>
+        <input
+          type="email"
+          name="email"
+          required
+          autocomplete="email"
+          placeholder={ph.email}
+          class="w-full rounded-lg border border-border bg-page px-3 py-2.5 text-text placeholder:text-subtle/80 focus:border-accent focus:outline-none focus:ring-2 focus:ring-ring/30"
+        />
+      </label>
+    </div>
+
+    <label class="block">
+      <span class="mb-1.5 block text-sm font-medium text-muted">{dict.contact.form.company}</span>
+      <input
+        type="text"
+        name="company"
+        autocomplete="organization"
+        placeholder={ph.company}
+        class="w-full rounded-lg border border-border bg-page px-3 py-2.5 text-text placeholder:text-subtle/80 focus:border-accent focus:outline-none focus:ring-2 focus:ring-ring/30"
+      />
+    </label>
+
+    <label class="block">
+      <span class="mb-1.5 block text-sm font-medium text-muted">{dict.contact.form.service}</span>
+      <select
+        name="service"
+        class="w-full rounded-lg border border-border bg-page px-3 py-2.5 text-text focus:border-accent focus:outline-none focus:ring-2 focus:ring-ring/30"
+      >
+        <option value="">{dict.contact.form.servicePlaceholder}</option>
+        <option value="general">{options.general}</option>
+        <option value="mobile">{options.mobile}</option>
+        <option value="web">{options.web}</option>
+        <option value="portal">{options.portal}</option>
+        <option value="systems">{options.systems}</option>
+        <option value="consulting">{options.consulting}</option>
+      </select>
+    </label>
+
+    <label class="block">
+      <span class="mb-1.5 block text-sm font-medium text-muted">{dict.contact.form.message}</span>
+      <textarea
+        name="message"
+        required
+        rows={5}
+        placeholder={ph.message}
+        class="w-full rounded-lg border border-border bg-page px-3 py-2.5 text-text placeholder:text-subtle/80 focus:border-accent focus:outline-none focus:ring-2 focus:ring-ring/30"
+      />
+    </label>
+
+    <p id="form-status" class="hidden text-sm" role="status" />
+
+    <button
+      type="submit"
+      class="w-full rounded-lg bg-accent px-5 py-3 text-sm font-semibold text-on-accent transition hover:bg-accent-hover sm:w-auto"
+    >
+      {dict.contact.form.submit}
+    </button>
+  </form>
+</div>
+
+<script define:vars={{ successMsg: dict.contact.form.success, errorMsg: dict.contact.form.error }}>
+  const form = document.getElementById('contact-form');
+  const statusEl = document.getElementById('form-status');
+  if (form instanceof HTMLFormElement && statusEl) {
+    const endpoint = form.dataset.endpoint;
+    form.addEventListener('submit', async (e) => {
+      if (!endpoint) return;
+      e.preventDefault();
+      statusEl.classList.add('hidden');
+      const fd = new FormData(form);
+      try {
+        const res = await fetch(endpoint, {
+          method: 'POST',
+          body: fd,
+          headers: { Accept: 'application/json' },
+        });
+        if (res.ok) {
+          statusEl.textContent = successMsg;
+          statusEl.className = 'text-sm text-emerald-600 dark:text-emerald-400';
+          statusEl.classList.remove('hidden');
+          form.reset();
+        } else {
+          throw new Error('submit failed');
+        }
+      } catch {
+        statusEl.textContent = errorMsg;
+        statusEl.className = 'text-sm text-red-600 dark:text-red-400';
+        statusEl.classList.remove('hidden');
+      }
+    });
+  }
+</script>

@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getRelativeLocaleUrl } from 'astro:i18n';
+import { messages, type Locale, LOCALES } from '../../../i18n';
+import { SERVICE_SLUGS, type ServiceSlug } from '../../../data/services';
+
+export function getStaticPaths() {
+  return LOCALES.flatMap((lang) =>
+    SERVICE_SLUGS.map((slug) => ({
+      params: { lang, slug },
+    })),
+  );
+}
+
+const { lang: langParam, slug: slugParam } = Astro.params;
+const lang = langParam as Locale;
+const slug = slugParam as ServiceSlug;
+const dict = messages[lang];
+const detail = dict.services.detail[slug];
+const seoTitle = `${detail.title} | ${dict.brand}`;
+const seoPath = `services/${slug}`;
+---
+
+<BaseLayout
+  lang={lang}
+  dict={dict}
+  title={seoTitle}
+  description={detail.intro}
+  seoPath={seoPath}
+>
+  <article class="mx-auto max-w-3xl px-4 py-14 md:px-6 md:py-20">
+    <p class="text-sm font-medium text-accent">
+      <a href={getRelativeLocaleUrl(lang, 'services')} class="no-underline hover:underline">
+        {dict.services.indexTitle}
+      </a>
+    </p>
+    <h1 class="mt-4 font-serif text-4xl font-semibold tracking-tight text-text md:text-5xl">
+      {detail.title}
+    </h1>
+    <p class="mt-6 text-lg text-muted">{detail.intro}</p>
+    <ul class="mt-10 space-y-4 border-l-2 border-accent/35 pl-6">
+      {detail.bullets.map((item) => <li class="text-subtle">{item}</li>)}
+    </ul>
+    <a
+      href={getRelativeLocaleUrl(lang, 'contact')}
+      class="mt-12 inline-flex rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-on-accent no-underline hover:bg-accent-hover"
+    >
+      {dict.home.primaryCta}
+    </a>
+  </article>
+</BaseLayout>
