@@ -16,7 +16,7 @@
   "footer": {
     "rights": "All rights reserved.",
     "cta": "Start a project",
-    "description": "We design and ship mobile apps, web products, portals, and business systems—with clear communication from discovery to launch."
+    "description": "Opero Malaysia: we design and ship mobile apps, web products, portals, and business systems—with clear communication from discovery to launch."
   },
   "locales": {
     "en": "English",
@@ -117,7 +117,7 @@
     "title": "About Opero",
     "description": "Who we are and why customer experience drives our work.",
     "heading": "Software partners, not ticket takers",
-    "lead": "Opero helps organizations ship digital products and internal tools that people enjoy using. We believe great customer experience (CX) comes from clarity, performance, and respectful design—not buzzwords.",
+    "lead": "Opero helps organizations in Malaysia ship digital products and internal tools that people enjoy using. We believe great customer experience (CX) comes from clarity, performance, and respectful design—not buzzwords.",
     "body1": "Our team blends product thinking with solid engineering. Whether you need a customer-facing app, an employee portal, or a backbone system, we align technical decisions with how real users work.",
     "body2": "We’re set up for long-term collaboration: readable codebases, handover-friendly docs, and pragmatic processes so your own team can own the roadmap when you’re ready.",
     "valuesHeading": "What we care about",
@@ -180,20 +180,20 @@
   },
   "seo": {
     "home": {
-      "title": "Opero — Apps, web, portals, systems & IT consulting",
-      "description": "Opero builds mobile apps, web products, portals, and business systems. Improve customer experience and ship with a partner focused on outcomes."
+      "title": "Opero Malaysia — Apps, web, portals, systems & IT consulting",
+      "description": "Opero Malaysia builds mobile apps, web products, portals, and business systems. Improve customer experience with a software partner focused on outcomes."
     },
     "services": {
-      "title": "Services — Opero",
-      "description": "Explore mobile, web, portal, system development, and IT consulting services from Opero."
+      "title": "Services — Opero Malaysia",
+      "description": "Explore mobile, web, portal, system development, and IT consulting services from Opero in Malaysia."
     },
     "about": {
-      "title": "About — Opero",
-      "description": "Learn about Opero’s mission to deliver software that improves customer and employee experience."
+      "title": "About — Opero Malaysia",
+      "description": "Learn about Opero’s mission in Malaysia: software that improves customer and employee experience."
     },
     "contact": {
-      "title": "Contact — Opero",
-      "description": "Contact Opero for software projects, portals, systems, and IT consulting."
+      "title": "Contact — Opero Malaysia",
+      "description": "Contact Opero Malaysia for software projects, portals, systems, and IT consulting."
     }
   }
 }
