@@ -145,13 +145,15 @@
       "name": "Name",
       "email": "Email",
       "company": "Company",
+      "whatsapp": "WhatsApp",
       "service": "Service interest",
       "servicePlaceholder": "Select…",
       "placeholders": {
         "name": "Ahmad bin Hassan",
         "email": "you@company.com.my",
         "company": "Contoh Solutions Sdn Bhd",
-        "message": "Project scope, timeline, budget — preferred contact e.g. +60 12-345 6789 (WhatsApp available)"
+        "whatsapp": "+60 12-345 6789",
+        "message": "Project scope, timeline, budget — anything else we should know"
       },
       "message": "Message",
       "submit": "Send message",

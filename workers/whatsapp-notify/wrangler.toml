@@ -1,0 +1,11 @@
+name = "opero-contact-notify"
+main = "worker.mjs"
+compatibility_date = "2024-01-01"
+
+# Set secrets via: wrangler secret put NOTIFY_SECRET
+# wrangler secret put WHATSAPP_TOKEN
+# wrangler secret put WHATSAPP_PHONE_NUMBER_ID
+#
+# Optional: wrangler vars (plain) for default recipient
+# [vars]
+# TO_WHATSAPP = "60164750789"

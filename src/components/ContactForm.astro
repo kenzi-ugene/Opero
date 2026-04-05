@@ -10,6 +10,8 @@ const { dict } = Astro.props;
 /** FormSubmit AJAX — delivers to this inbox. Override with PUBLIC_CONTACT_FORM_ACTION if needed. */
 const defaultEndpoint = 'https://formsubmit.co/ajax/operomykl@gmail.com';
 const formAction = import.meta.env.PUBLIC_CONTACT_FORM_ACTION?.trim() || defaultEndpoint;
+const notifyUrl = import.meta.env.PUBLIC_NOTIFY_URL?.trim() ?? '';
+const notifySecret = import.meta.env.PUBLIC_NOTIFY_SECRET?.trim() ?? '';
 const options = dict.contact.form.options;
 const ph = dict.contact.form.placeholders;
 ---
@@ -63,6 +65,18 @@ const ph = dict.contact.form.placeholders;
     </label>
 
     <label class="block">
+      <span class="mb-1.5 block text-sm font-medium text-muted">{dict.contact.form.whatsapp}</span>
+      <input
+        type="tel"
+        name="whatsapp"
+        autocomplete="tel"
+        inputmode="tel"
+        placeholder={ph.whatsapp}
+        class="w-full rounded-lg border border-border bg-page px-3 py-2.5 text-text placeholder:text-subtle/80 focus:border-accent focus:outline-none focus:ring-2 focus:ring-ring/30"
+      />
+    </label>
+
+    <label class="block">
       <span class="mb-1.5 block text-sm font-medium text-muted">{dict.contact.form.service}</span>
       <select
         name="service"
@@ -100,7 +114,12 @@ const ph = dict.contact.form.placeholders;
   </form>
 </div>
 
-<script define:vars={{ successMsg: dict.contact.form.success, errorMsg: dict.contact.form.error }}>
+<script define:vars={{
+  successMsg: dict.contact.form.success,
+  errorMsg: dict.contact.form.error,
+  notifyUrl,
+  notifySecret,
+}}>
   const form = document.getElementById('contact-form');
   const statusEl = document.getElementById('form-status');
   if (form instanceof HTMLFormElement && statusEl) {
@@ -117,6 +136,19 @@ const ph = dict.contact.form.placeholders;
           headers: { Accept: 'application/json' },
         });
         if (res.ok) {
+          if (notifyUrl && notifySecret) {
+            const payload = Object.fromEntries(
+              [...fd.entries()].filter(([key]) => !key.startsWith('_')),
+            );
+            fetch(notifyUrl, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                Authorization: `Bearer ${notifySecret}`,
+              },
+              body: JSON.stringify(payload),
+            }).catch(() => {});
+          }
           statusEl.textContent = successMsg;
           statusEl.className = 'text-sm text-emerald-600 dark:text-emerald-400';
           statusEl.classList.remove('hidden');

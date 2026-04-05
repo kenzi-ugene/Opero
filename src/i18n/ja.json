@@ -145,13 +145,15 @@
       "name": "お名前",
       "email": "メール",
       "company": "会社名",
+      "whatsapp": "WhatsApp",
       "service": "ご関心のサービス",
       "servicePlaceholder": "選択…",
       "placeholders": {
         "name": "山田 太郎",
         "email": "you@company.com.my",
         "company": "株式会社サンプル",
-        "message": "スコープ、スケジュール、ご予算—ご希望の連絡先（例：+60 12-345 6789、WhatsApp可）"
+        "whatsapp": "+60 12-345 6789",
+        "message": "スコープ、スケジュール、ご予算—その他"
       },
       "message": "メッセージ",
       "submit": "送信",

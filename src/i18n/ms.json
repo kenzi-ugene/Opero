@@ -145,13 +145,15 @@
       "name": "Nama",
       "email": "E-mel",
       "company": "Syarikat",
+      "whatsapp": "WhatsApp",
       "service": "Perkhidmatan diminati",
       "servicePlaceholder": "Pilih…",
       "placeholders": {
         "name": "Ahmad bin Hassan",
         "email": "anda@syarikat.com.my",
         "company": "Contoh Solutions Sdn Bhd",
-        "message": "Skop projek, garis masa, bajet — hubungan pilihan cth. +60 12-345 6789 (WhatsApp)"
+        "whatsapp": "+60 12-345 6789",
+        "message": "Skop projek, garis masa, bajet — nota lain"
       },
       "message": "Mesej",
       "submit": "Hantar mesej",

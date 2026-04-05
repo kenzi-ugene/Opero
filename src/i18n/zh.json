@@ -145,13 +145,15 @@
       "name": "姓名",
       "email": "邮箱",
       "company": "公司",
+      "whatsapp": "WhatsApp",
       "service": "意向服务",
       "servicePlaceholder": "请选择…",
       "placeholders": {
         "name": "陈国强",
         "email": "nama@syarikat.com.my",
         "company": "范例科技私人有限公司",
-        "message": "项目范围、时间表、预算——首选联络方式如 +60 12-345 6789（可注明 WhatsApp）"
+        "whatsapp": "+60 12-345 6789",
+        "message": "项目范围、时间表、预算——其他说明"
       },
       "message": "留言",
       "submit": "发送",
