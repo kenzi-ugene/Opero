@@ -1,5 +1,10 @@
 # Build Astro and deploy to GitHub Pages
-# Repo → Settings → Pages → Source: GitHub Actions
+# Repo → Settings → Pages → Source: GitHub Actions (not "Deploy from a branch")
+#
+# If the site still shows README: (1) Delete any extra workflow GitHub added, e.g.
+# .github/workflows/static.yml or jekyll-*.yml, that uploads the repo root instead of dist/.
+# (2) Settings → Environments → github-pages — remove "Required reviewers" if deploy is waiting.
+# (3) Actions tab — this workflow must be green; a failed build leaves the old site up.
 name: Deploy Astro to GitHub Pages
 
 on:
@@ -27,6 +32,12 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
+      - name: Verify build output (must not upload README-only tree)
+        run: |
+          test -f dist/index.html
+          test -f dist/.nojekyll
+          grep -q 'doctype html' dist/index.html || (echo 'dist/index.html missing or invalid' && exit 1)
+          ls -la dist | head -20
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
@@ -34,6 +45,9 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
