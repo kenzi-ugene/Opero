@@ -5,6 +5,7 @@ import { BrandSectionImage } from "./BrandSectionImage";
 import { SITE_IMAGES } from "../content/siteImages";
 import { AnimatedSection } from "./AnimatedSection";
 import { heroContainer, heroItem, staggerContainer, staggerItem, VIEWPORT_DEFAULT } from "../motion/siteMotion";
+import React from "react";
 
 export function About() {
   const principles = [

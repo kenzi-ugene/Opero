@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from "motion/react";
 import { Navigation } from "./Navigation";
 import { Footer } from "./Footer";
 import { PAGE_TRANSITION } from "../motion/siteMotion";
+import React from "react";
 
 export function Root() {
   const location = useLocation();

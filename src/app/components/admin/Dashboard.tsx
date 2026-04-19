@@ -11,6 +11,7 @@ import {
   Image as ImageIcon
 } from "lucide-react";
 import { toast } from "sonner";
+import React from "react";
 
 type Section = "overview" | "home" | "services" | "about" | "contact" | "settings";
 

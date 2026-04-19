@@ -5,6 +5,7 @@ import { toast } from "sonner";
 import { motion } from "motion/react";
 import { AnimatedSection } from "./AnimatedSection";
 import { heroContainer, heroItem, staggerContainer, staggerItemSoft, VIEWPORT_DEFAULT } from "../motion/siteMotion";
+import React from "react";
 
 export function Contact() {
   const [formData, setFormData] = useState({

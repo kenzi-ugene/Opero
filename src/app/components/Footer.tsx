@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 import { motion } from "motion/react";
 import { staggerContainer, staggerItemSoft, VIEWPORT_DEFAULT } from "../motion/siteMotion";
+import React from "react";
 
 export function Footer() {
   return (
